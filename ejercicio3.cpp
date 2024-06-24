@@ -14,6 +14,9 @@ int main (){
     cout<<"Redondeo al entero mas cercano de "<<nn<<" es "<<round(nn)<<endl;
     cout<<"Redondeo hacia arriba de "<<nn<<" es "<<ceil(nn)<<endl;
     cout<<"Redondeo hacia abajo de "<<nn<<" es "<<floor(nn)<<endl;
+    cout<<"Seno de "<<nn<<" es "<<sin(nn)<<endl;
+    cout<<"Coseno de "<<nn<<" es "<<cos(nn)<<endl;
+    cout<<"Tangente de "<<nn<<" es "<<tan(nn)<<endl;
 
 
     return 0;
