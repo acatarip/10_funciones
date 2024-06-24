@@ -33,10 +33,10 @@ int main (){
             break;
             case 0:
                 cout<<"Saliendo..."<<endl;
-                system("Pause");
+                system("Pause>nul");
             break;
             default:
-                cout<<"Opcion no valida. Saliendo..."<<endl;
+                cout<<"Opcion no valida. Intente con otro valor."<<endl;
                 system("Pause");
             break;
         }
@@ -46,11 +46,14 @@ int main (){
 }
 
 void depositar (float m){
-    ss = ss +m;
+    ss = ss+m;
 }
 
 void retirar (float m){
-ss = ss-m;
+    if (m>ss)
+        cout<<"El monto excede el saldo. No es posible realizar la operacion."<<endl;
+    else
+        ss = ss-m;
 }
 
 void mostrarSaldo (){
