@@ -22,6 +22,12 @@ int main (){
             cout<<"Ingrese monto a depositar: "; cin>>monto;
             depositar(monto);
         break;
+        case 2:
+            cout<<"Ingrese monto a retirar: "; cin>>monto;
+        break;
+        case 3:
+            mostrarSaldo();
+        break;
         case 0:
             cout<<"Saliendo..."<<endl;
             system("Pause");
