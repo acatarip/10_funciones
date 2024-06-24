@@ -1,8 +1,15 @@
 #include <iostream>
 using namespace std;
 
+void depositar (float);
+void retirar (float);
+void mostrarSaldo ();
+
+float ss=0;    //variable global, puede ser accedida por todos los programas
+
 int main (){
     int op;
+    float monto;
     system("cls");
     cout<<"Cajero automatico"<<endl;
     cout<<"1. Depositar"<<endl;
@@ -11,15 +18,31 @@ int main (){
     cout<<"0. Salir"<<endl;
     cout<<"Elige una opcion: ";cin>>op;
     switch (op){
+        case 1:
+            cout<<"Ingrese monto a depositar: "; cin>>monto;
+            depositar(monto);
+        break;
         case 0:
-        cout<<"Saliendo..."<<endl;
-        system("Pause");
+            cout<<"Saliendo..."<<endl;
+            system("Pause");
         break;
         default:
-        cout<<"Opcion no valida. Saliendo..."<<endl;
-        system("Pause");
+            cout<<"Opcion no valida. Saliendo..."<<endl;
+            system("Pause");
         break;
     }
 
     return 0;
+}
+
+void depositar (float m){
+    ss = ss +m;
+}
+
+void retirar (float m){
+ss = ss-m;
+}
+
+void mostrarSaldo (){
+    cout<<"El saldo actual es "<<ss<<endl;
 }
