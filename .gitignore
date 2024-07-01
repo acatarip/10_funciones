@@ -2,3 +2,4 @@ output
 *.json
 *.exe
 Proyecto/*.layout
+Proyecto/*.dev
