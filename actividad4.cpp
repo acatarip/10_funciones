@@ -29,4 +29,12 @@ void raices(float a, float b, float c){
 		x2=(-b - sqrt(d)) / (2*a);
 		cout<<"Las raices son reales: "<<x1<<" y "<<x2<<"."<<endl;	
 	}
+	else if(d==0){
+		x1=(-b + sqrt(d)) / (2*a);
+		cout<<"Las raices son reales e iguales, por lo tanto son: "<<x1<<" y "<<x1<<"."<<endl;
+	}
+	else{
+		cout<<"Las raices son complejas."<<endl;
+	}
+	
 }
